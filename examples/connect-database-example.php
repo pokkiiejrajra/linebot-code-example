@@ -6,8 +6,8 @@ use \LINE\LINEBot\HTTPClient\CurlHTTPClient;
 use \LINE\LINEBot;
 use \LINE\LINEBot\MessageBuilder\TextMessageBuilder;
 
-$channel_token = '2MCOyCeaBipmw3ZzJG8BrsiO4KzCoaoPddMgbZtEu5HHVeIaWU+PDKcCZRJEY76zqxv56d15kZeMoU/vQ0zuzPFlbhFM7AhRMZwLrSkLdciLCuKUgV6aFrvAAuuG1mMWe7DCzfEW9FfHQhJR4F/m0AdB04t89/1O/w1cDnyilFU=';
-$channel_secret = 'd4afd7da941ac195c155fe67dcb5a338';
+$channel_token = '6VDxlC/den1sv3g43zYlYQNXm9bTffu3bdcnqE0Lagyw5ZsGTEfh6ylaa0epmhUm+u2nAXlrYtcd7QqKHopBjhd4U+4cNg1eC99iKi87OAEVlLUWGMwqadtTcqpfQll8QHZ7cxk5X6sDir+mEut2VwdB04t89/1O/w1cDnyilFU=';
+$channel_secret = '2e77c666b7d87e6bb988c0823576b7a5';
 
 // Get message from Line API
 $content = file_get_contents('php://input');
@@ -24,10 +24,10 @@ if (!is_null($events['events'])) {
             // Get replyToken
             $replyToken = $event['replyToken'];
 
-            $host = 'ec2-174-129-223-193.compute-1.amazonaws.com';
-            $dbname = 'd74bjtc28mea5m';
-            $user = 'eozuwfnzmgflmu';
-            $pass = '2340614a293db8e8a8c02753cd5932cdee45ab90bfcc19d0d306754984cbece1';
+            $host = 'ec2-54-204-45-43.compute-1.amazonaws.com';
+            $dbname = 'd179vim1h0c4sd';
+            $user = 'zsatyuvhtvpafu';
+            $pass = '9769abede7612f615437c2b43aa5b80963b2dc3ed86b779b252b74d034069f12';
             $connection = new PDO("pgsql:host=$host;dbname=$dbname", $user, $pass); 
             
             $params = array(
